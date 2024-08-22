@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức du lịch - Sao Việt Travel</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/styles/trangChu.css">
+    <link rel="stylesheet" href="/styles/tinTuc.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            <p>Sao Việt</p>
+        </div>
+       <div class="search">
+            <div class="sub-search">
+                <input type="text" placeholder="Tìm kiếm">
+                <span><img src="/icons/search.svg" alt="icon"></span>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="icon-calendar">
+                <img src="/icons/clock-regular.svg" alt="icon">
+                <p>Lịch hẹn</p>
+                <span id="notification-calendar"></span>
+            </div>
+            <div class="icon-account">
+                <a href="#">
+                    <img src="/icons/user-regular.svg" alt="icon"></i>
+                    <p>Đăng nhập</p>
+                </a>
+            </div>
+        </div>  
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="/index/trangChu.html">Trang chủ</a></li>
+            <li><a href="/index/tour.html">Tour</a></li>
+            <li><a href="/index/khuyenMai.html">Khuyến mãi</a></li>
+            <li><a href="/index/xemKS.html">Xem khách sạn</a></li>
+            <li><a href="/index/xemTinTuc.html">Xem tin tức</a></li>
+        </ul>
+    </nav>
+
+    <div class="calendar">
+        <div class="title">
+            <span>Lịch hẹn</span>
+            <button type="button" id="btn-close"><img src="/icons/xmark-solid.svg" alt="icon"></button>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <img src="/icons/calendar-regular.svg" alt="icon">
+                <div class="infor-calendar">
+                    <p>Mã phiếu khám: <span id="id-calendar">123</span></p>
+                    <p>Thời gian khám: <span id="time">10h-25/4</span></p>
+                    <p>Phòng khám: <span id="room">Số 1</span></p>
+                    <p>Khoa: <span id="name-faculty">Răng hàm mặt</span></p>
+                    <p>Bác sĩ: <span id="name-doctor">Trần Văn A</span></p>
+                    <p>Trạng thái: <span id="status">Đang xử lý</span></p>
+                </div>
+            </div>
+            <div class="sub-content">
+                <img src="/icons/calendar-regular.svg" alt="icon">
+                <div class="infor-calendar">
+                    <p>Mã phiếu khám: <span id="id-calendar">1243</span></p>
+                    <p>Thời gian khám: <span id="time">8h-23/4</span></p>
+                    <p>Phòng khám: <span id="room">Số 1</span></p>
+                    <p>Khoa: <span id="name-faculty">Răng hàm mặt</span></p>
+                    <p>Bác sĩ: <span id="name-doctor">Trần Văn A</span></p>
+                    <p>Trạng thái: <span id="status">Đang xử lý</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <span style="font-weight: 700;">Tổng: </span><span id="totalCalendar"></span>
+        </div>
+    </div>
+
+    
+
+    <main>
+        <h1>Tin tức du lịch</h1>
+        
+        <section class="featured-news">
+            <h2>Tin nổi bật</h2>
+            <article class="featured-article">
+                <img src="/images/featured-travel.jpg" alt="Ảnh tin tức nổi bật">
+                <h3>Khám phá 5 bãi biển đẹp nhất Việt Nam năm 2024</h3>
+                <p>Từ Phú Quốc đến Nha Trang, hãy cùng chúng tôi khám phá những bãi biển tuyệt đẹp và còn nguyên sơ của Việt Nam...</p>
+                <a href="/index//chiTietTinTuc.html">Đọc thêm</a>
+            </article>
+        </section>
+
+        <section class="news-list">
+            <h2>Tin tức mới nhất</h2>
+            <article class="news-item">
+                <img src="/images/travel-news1.jpg" alt="Ảnh tin tức 1">
+                <h3>Hướng dẫn du lịch Sapa mùa lúa chín</h3>
+                <p>Khám phá vẻ đẹp của những thửa ruộng bậc thang vàng óng ở Sapa vào mùa thu...</p>
+                <a href="/index/chiTietTinTuc.html">Đọc thêm</a>
+            </article>
+            <article class="news-item">
+                <img src="/images/travel-news2.jpg" alt="Ảnh tin tức 2">
+                <h3>Top 10 nhà hàng đáng thử ở Hội An</h3>
+                <p>Khám phá ẩm thực đặc sắc của phố cổ Hội An qua danh sách 10 nhà hàng tuyệt vời nhất...</p>
+                <a href="#">Đọc thêm</a>
+            </article>
+            <article class="news-item">
+                <img src="/images/travel-news3.jpg" alt="Ảnh tin tức 3">
+                <h3>Cập nhật: Quy định mới về visa du lịch Việt Nam</h3>
+                <p>Những thay đổi quan trọng trong chính sách visa du lịch Việt Nam năm 2024...</p>
+                <a href="/index/chiTietTinTuc.html">Đọc thêm</a>
+            </article>
+            <article class="news-item">
+                <img src="/images/travel-news1.jpg" alt="Ảnh tin tức 1">
+                <h3>Hướng dẫn du lịch Sapa mùa lúa chín</h3>
+                <p>Khám phá vẻ đẹp của những thửa ruộng bậc thang vàng óng ở Sapa vào mùa thu...</p>
+                <a href="/index/chiTietTinTuc.html">Đọc thêm</a>
+            </article>
+            <article class="news-item">
+                <img src="/images/travel-news2.jpg" alt="Ảnh tin tức 2">
+                <h3>Top 10 nhà hàng đáng thử ở Hội An</h3>
+                <p>Khám phá ẩm thực đặc sắc của phố cổ Hội An qua danh sách 10 nhà hàng tuyệt vời nhất...</p>
+                <a href="/index/chiTietTinTuc.html">Đọc thêm</a>
+            </article>
+        </section>
+
+        <section class="news-categories">
+            <h2>Chuyên mục</h2>
+            <ul>
+                <li><a href="#">Điểm đến hot</a></li>
+                <li><a href="#">Ẩm thực du lịch</a></li>
+                <li><a href="#">Mẹo vặt cho du khách</a></li>
+                <li><a href="#">Văn hóa & Lễ hội</a></li>
+                <li><a href="#">Khuyến mãi tour</a></li>
+                <li><a href="#">Trải nghiệm du lịch</a></li>
+            </ul>
+        </section>
+
+        <section class="newsletter">
+            <h2>Đăng ký nhận tin</h2>
+            <p>Nhận những thông tin du lịch mới nhất và ưu đãi hấp dẫn!</p>
+            <form>
+                <input type="email" placeholder="Nhập email của bạn">
+                <button type="submit">Đăng ký</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <div class="infor">
+                <h4>Sao Việt Travel</h4>
+                <span><img src="/icons/location-dot-solid.svg" alt="icon"></span><p>1 Hoàng Công Chất, Phú Diễn, Nam Từ Liêm, Hà Nội, Việt Nam</p>
+                <span><img src="/icons/phone-solid.svg" alt="icon"></span><p>0399999999 </p>
+                <span><img src="/icons/envelope-solid.svg" alt="icon"></span><p>info@saoviettravel.com</p>
+            </div>
+            <div class="policy">
+                <img src="/images/logo.png" alt="logo">
+                <span>Sao Việt Travel</span>
+                <p><a href="#">Về chúng tôi</a></p>
+                <p><a href="#">Chính sách bảo mật</a></p>
+                <p><a href="#">Điều khoản sử dụng</a></p>
+                <p><a href="#">Liên hệ</a></p>
+                <p><a href="#">Câu hỏi thường gặp</a></p>
+            </div>
+            <div class="contact">
+                <h4>Kết nối với chúng tôi</h4>
+                <p><a href="#"><img src="/icons/facebook.svg" alt="icon">Facebook</a></p>
+                <p><a href="#"><img src="/icons/instagram.svg" alt="icon">Instagram</a></p>
+                <p><a href="#"><img src="/icons/twitter.svg" alt="icon">Twitter</a></p>
+            </div>
+            <div class="end">
+                <hr>
+                <span>© 2024 Sao Việt Travel</span>
+            </div>
+        </footer>
+    
+    </footer>
+
+    <script defer src="/scripts/chung.js"></script>
+    <script defer src="/scripts/tinTuc.js"></script>
+</body>
+</html>

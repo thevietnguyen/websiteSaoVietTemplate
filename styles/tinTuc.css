@@ -1,0 +1,220 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Featured news styles */
+.featured-news {
+    margin-bottom: 2rem;
+}
+
+.featured-article {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.featured-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.featured-article a{
+    text-decoration: none;
+    color: black;
+}
+
+.featured-article a:hover {
+    color: skyblue;
+}
+
+/* News list styles */
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.news-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.news-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.news-list a:hover {
+    color: skyblue;
+}
+
+/* News categories styles */
+.news-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-categories li {
+    margin-bottom: 0.5rem;
+}
+
+.news-categories a {
+    color: #333;
+    text-decoration: none;
+}
+
+.news-categories a:hover {
+    color: skyblue;
+}
+
+/* Newsletter styles */
+.newsletter {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 30px;
+    height: 255px;
+    background-color: #eeeded;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-top: 25px;
+    justify-content: space-evenly;
+    gap: 160px;
+}
+
+footer .infor {
+    width: 300px;
+}
+
+footer h4 {
+    font-size: 17px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer .infor span {
+    float: left;
+    padding-right: 10px;
+    width: 25px;
+}
+
+footer .infor p {
+    display: block;
+    padding-bottom: 10px;
+}
+
+footer .policy {
+    width: 325px;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+footer .policy img {
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+footer .policy span {
+    font-weight: bold;
+    position: relative;
+    top: -12px;
+    right: -5px;
+    color: #ffc10e;
+}
+
+footer .policy p {
+    margin-top: 5px;
+}
+
+footer .policy a {
+    text-decoration: none;
+    color: #34b7c6;
+}
+
+footer .contact p{
+    padding-bottom: 15px;
+}
+
+footer .contact a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+footer .contact img {
+    max-width: 18px;
+    margin-right: 10px;
+}
+
+footer .end {
+    margin-top: 200px;
+    position: absolute;
+    height: 10px;
+    padding-left: 100px;
+}
+
+footer .end hr {
+    width: 1265px;
+}
+
+footer .end span {
+    font-size: 11px;
+}

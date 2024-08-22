@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao Việt Travel - Chi tiết khách sạn</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/styles/chiTietKS.css">
+    <link rel="stylesheet" href="/styles/trangChu.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            <p>Sao Việt</p>
+        </div>
+       <div class="search">
+            <div class="sub-search">
+                <input type="text" placeholder="Tìm kiếm">
+                <span><img src="/icons/search.svg" alt="icon"></span>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="icon-calendar">
+                <img src="/icons/clock-regular.svg" alt="icon">
+                <p>Lịch hẹn</p>
+                <span id="notification-calendar"></span>
+            </div>
+            <div class="icon-account">
+                <a href="#">
+                    <img src="/icons/user-regular.svg" alt="icon">
+                    <p>Đăng nhập</p>
+                </a>
+            </div>
+        </div>  
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="/index/trangChu.html">Trang chủ</a></li>
+            <li><a href="/index/tour.html">Tour</a></li>
+            <li><a href="/index/huongDanVien.html">Hướng dẫn viên</a></li>
+            <li><a href="/index/xemKS.html">Xem khách sạn</a></li>
+            <li><a href="/index/xemTinTuc.html">Xem tin tức</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="hotel-details">
+            <h1>Chi tiết khách sạn</h1>
+            <div class="hotel-info">
+                <img src="/images/hotel_1.jpg" alt="Ảnh khách sạn" class="hotel-image">
+                <div class="hotel-text">
+                    <p><strong>Mã khách sạn:</strong> <span id="hotel-id">KS001</span></p>
+                    <h2 id="hotel-name">Khách sạn Sao Việt Luxury</h2>
+                    <p><strong>Địa chỉ:</strong> <span id="hotel-address">123 Đường ABC, Quận XYZ, Hà Nội</span></p>
+                    <div class="hotel-description">
+                        <h3>Mô tả:</h3>
+                        <p id="hotel-description">
+                            Khách sạn Sao Việt Luxury là một khách sạn 5 sao sang trọng tọa lạc tại trung tâm thành phố Hà Nội. 
+                            Với 200 phòng nghỉ được thiết kế tinh tế, nhà hàng đẳng cấp, hồ bơi trên tầng thượng và trung tâm 
+                            spa, chúng tôi cam kết mang đến cho quý khách trải nghiệm lưu trú tuyệt vời nhất. Khách sạn cách 
+                            các điểm tham quan nổi tiếng chỉ vài phút đi bộ, thuận tiện cho cả khách du lịch và khách công tác.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-amenities">
+                <h3>Tiện nghi:</h3>
+                <ul>
+                    <li>Wi-Fi miễn phí</li>
+                    <li>Hồ bơi trên tầng thượng</li>
+                    <li>Phòng tập gym</li>
+                    <li>Nhà hàng và quầy bar</li>
+                    <li>Dịch vụ đưa đón sân bay</li>
+                </ul>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="infor">
+            <h4>Sao Việt Travel</h4>
+            <span><img src="/icons/location-dot-solid.svg" alt="icon"></span><p>1 Hoàng Công Chất, Phú Diễn, Nam Từ Liêm, Hà Nội, Việt Nam</p>
+            <span><img src="/icons/phone-solid.svg" alt="icon"></span><p>0399999999 </p>
+            <span><img src="/icons/envelope-solid.svg" alt="icon"></span><p>info@saoviettravel.com</p>
+        </div>
+        <div class="policy">
+            <img src="/images/logo.png" alt="logo">
+            <span>Sao Việt Travel</span>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+            <p><a href="#">Điều khoản sử dụng</a></p>
+            <p><a href="#">Liên hệ</a></p>
+            <p><a href="#">Câu hỏi thường gặp</a></p>
+        </div>
+        <div class="contact">
+            <h4>Kết nối với chúng tôi</h4>
+            <p><a href="#"><img src="/icons/facebook.svg" alt="icon">Facebook</a></p>
+            <p><a href="#"><img src="/icons/instagram.svg" alt="icon">Instagram</a></p>
+            <p><a href="#"><img src="/icons/twitter.svg" alt="icon">Twitter</a></p>
+        </div>
+        <div class="end">
+            <hr>
+            <span>© 2024 Sao Việt Travel</span>
+        </div>
+    </footer>
+
+    <script defer src="/scripts/chung.js"></script>
+    <script defer src="/scripts/chiTietKhachSan.js"></script>
+</body>
+</html>

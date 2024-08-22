@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Du Lịch - Sao Việt Travel</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/styles/trangChu.css">
+    <link rel="stylesheet" href="/styles/tour.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            <p>Sao Việt</p>
+        </div>
+       <div class="search">
+            <div class="sub-search">
+                <input type="text" placeholder="Tìm kiếm">
+                <span><img src="/icons/search.svg" alt="icon"></span>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="icon-calendar">
+                <img src="/icons/clock-regular.svg" alt="icon">
+                <p>Lịch hẹn</p>
+                <span id="notification-calendar"></span>
+            </div>
+            <div class="icon-account">
+                <a href="#">
+                    <img src="/icons/user-regular.svg" alt="icon">
+                    <p>Đăng nhập</p>
+                </a>
+            </div>
+        </div>  
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="/index/trangChu.html">Trang chủ</a></li>
+            <li><a href="/index/tour.html" class="active">Tour</a></li>
+            <li><a href="/index/huongDanVien.html">Hướng dẫn viên</a></li>
+            <li><a href="/index/xemKS.html">Xem khách sạn</a></li>
+            <li><a href="/index/xemTinTuc.html">Xem tin tức</a></li>
+        </ul>
+    </nav>
+
+    <div class="space"></div>
+
+    <div class="slide">
+        <div class="sub-slide">
+            <div class="item">
+                <img src="/images/tong_hop.jpg" alt="destination_1">
+                <div class="caption">Khám phá Hạ Long Bay</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="tour-categories">
+        <h1>Danh Mục Tour Du Lịch</h1>
+        <p>Khám phá các tour du lịch tuyệt vời được chúng tôi cung cấp.</p>
+        <div class="container">
+            <div class="category-item">
+                <a href="/index/cacTour.html">
+                    <img src="/images/tour_1.jpg" alt="Tour Biển Đảo">
+                    <h4>Tour Biển Đảo</h4>
+                    <p>Khám phá những bãi biển tuyệt đẹp và các đảo hoang sơ.</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/index/chiTietTour.html">
+                    <img src="/images/tour_2.jpg" alt="Tour Văn Hóa Lịch Sử">
+                    <h4>Tour Văn Hóa Lịch Sử</h4>
+                    <p>Tìm hiểu về lịch sử và văn hóa đặc sắc của các vùng miền.</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/index/chiTietTour.html">
+                    <img src="/images/tour_3.jpg" alt="Tour Nghỉ Dưỡng">
+                    <h4>Tour Nghỉ Dưỡng</h4>
+                    <p>Thư giãn và tận hưởng những dịch vụ nghỉ dưỡng hàng đầu.</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/index/chiTietTour.html">
+                    <img src="/images/tour_4.jpg" alt="Tour Mạo Hiểm">
+                    <h4>Tour Mạo Hiểm</h4>
+                    <p>Thử thách bản thân với những hoạt động mạo hiểm và thú vị.</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="/index/chiTietTour.html">
+                    <img src="/images/tour_5.jpg" alt="Tour Ẩm Thực">
+                    <h4>Tour Ẩm Thực</h4>
+                    <p>Thưởng thức những món ăn đặc sản và tìm hiểu văn hóa ẩm thực.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="infor">
+            <h4>Sao Việt Travel</h4>
+            <span><img src="/icons/location-dot-solid.svg" alt="icon"></span><p>1 Hoàng Công Chất, Phú Diễn, Nam Từ Liêm, Hà Nội, Việt Nam</p>
+            <span><img src="/icons/phone-solid.svg" alt="icon"></span><p>0399999999 </p>
+            <span><img src="/icons/envelope-solid.svg" alt="icon"></span><p>info@saoviettravel.com</p>
+        </div>
+        <div class="policy">
+            <img src="/images/logo.png" alt="logo">
+            <span>Sao Việt Travel</span>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+            <p><a href="#">Điều khoản sử dụng</a></p>
+            <p><a href="#">Liên hệ</a></p>
+            <p><a href="#">Câu hỏi thường gặp</a></p>
+        </div>
+        <div class="contact">
+            <h4>Kết nối với chúng tôi</h4>
+            <p><a href="#"><img src="/icons/facebook.svg" alt="icon">Facebook</a></p>
+            <p><a href="#"><img src="/icons/instagram.svg" alt="icon">Instagram</a></p>
+            <p><a href="#"><img src="/icons/twitter.svg" alt="icon">Twitter</a></p>
+        </div>
+        <div class="end">
+            <hr>
+            <span>© 2024 Sao Việt Travel</span>
+        </div>
+    </footer>
+
+    <script defer src="/scripts/chung.js"></script>
+    <script defer src="/scripts/tour.js"></script>
+</body>
+</html>

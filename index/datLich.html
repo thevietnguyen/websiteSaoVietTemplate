@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt lịch khám</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/styles/trangChu.css">
+    <link rel="stylesheet" href="/styles/datLich.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            <p>Phước Thịnh</p>
+        </div>
+       <div class="search">
+            <div class="sub-search">
+                <input type="text" placeholder="Tìm kiếm">
+                <span><img src="/icons/search.svg" alt="icon"></span>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="icon-calendar">
+                <img src="/icons/clock-regular.svg" alt="icon">
+                <p>Lịch hẹn</p>
+                <span id="notification-calendar"></span>
+            </div>
+            <div class="icon-account">
+                <a href="#">
+                    <img src="/icons/user-regular.svg" alt="icon"></i>
+                    <p>Đăng nhập</p>
+                </a>
+            </div>
+        </div>  
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="/index/trangChu.html">Trang chủ</a></li>
+            <li><a href="/index/tour.html">Tour</a></li>
+            <li><a href="/index/khuyenMai.html">Khuyến mãi</a></li>
+            <li><a href="/index/xemKS.html">Xem khách sạn</a></li>
+            <li><a href="/index/xemTinTuc.html">Xem tin tức</a></li>
+        </ul>
+    </nav>
+
+    <div class="calendar">
+        <div class="title">
+            <span>Lịch hẹn</span>
+            <button type="button" id="btn-close"><img src="/icons/xmark-solid.svg" alt="icon"></button>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <img src="/icons/calendar-regular.svg" alt="icon">
+                <div class="infor-calendar">
+                    <p>Mã phiếu khám: <span id="id-calendar">123</span></p>
+                    <p>Thời gian khám: <span id="time">10h-25/4</span></p>
+                    <p>Phòng khám: <span id="room">Số 1</span></p>
+                    <p>Khoa: <span id="name-faculty">Răng hàm mặt</span></p>
+                    <p>Bác sĩ: <span id="name-doctor">Trần Văn A</span></p>
+                    <p>Trạng thái: <span id="status">Đang xử lý</span></p>
+                </div>
+            </div>
+            <div class="sub-content">
+                <img src="/icons/calendar-regular.svg" alt="icon">
+                <div class="infor-calendar">
+                    <p>Mã phiếu khám: <span id="id-calendar">1243</span></p>
+                    <p>Thời gian khám: <span id="time">8h-23/4</span></p>
+                    <p>Phòng khám: <span id="room">Số 1</span></p>
+                    <p>Khoa: <span id="name-faculty">Răng hàm mặt</span></p>
+                    <p>Bác sĩ: <span id="name-doctor">Trần Văn A</span></p>
+                    <p>Trạng thái: <span id="status">Đang xử lý</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <span style="font-weight: 700;">Tổng: </span><span id="totalCalendar"></span>
+        </div>
+    </div>
+
+    <div class="calendar-content">
+        <div><h2>Đơn đặt lịch khám</h2></div>
+        <form action="#" class="form-schedule">
+            <table>
+                <thead>
+                    <th>
+                        <img src="/images/doctor_1.jpg" alt="anh" id="avatar-doctor">
+                        <p id="name-doctor">Bác sĩ Lê Nhật Minh</p>
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Họ tên bệnh nhân<span>*</span></p>
+                            <input id="name" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Giới tính<span>*</span></p>
+                            <input id="radMan" type="radio" name="gender" checked="true"><span id="gender">Nam</span>
+                            <input id="radWoman" type="radio" name="gender"><span id="gender">Nữ</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Số điện thoại liên hệ<span>*</span></p>
+                            <input id="phone-number" type="text" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Năm sinh<span>*</span></p>
+                            <input id="year-of-birth" type="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Địa chỉ</p>
+                            <input id="address" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Chuyên khoa<span>*</span></p>
+                            <input id="name-faculty" type="text" disabled value="Cơ xương khớp">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Thời gian khám<span>*</span></p>
+                            <input type="date" id="date">
+                            <select id="time">
+                                <option value="8-am">8:00</option>
+                                <option value="9-am">9:00</option>
+                                <option value="10-am">10:00</option>
+                                <option value="11-am">11:00</option>
+                                <option value="1-pm">13:00</option>
+                                <option value="2-pm">14:00</option>
+                                <option value="3-pm">15:00</option>
+                                <option value="4-pm">16:00</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Lý do khám</p>
+                            <textarea id="reason" rows="4" cols="75"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Ghi chú</p>
+                            <textarea id="note" rows="4" cols="75"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="notifi">
+                            <i>Chú ý: <span>*</span> không được bỏ trống!</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="color: #45C3D2;">Hình thức thanh toán</p>
+                            <input type="radio" checked>Thanh toán sau tại phòng khám
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="container">
+                                <p>Giá khám <span id="price">400.000</span></p>
+                                <p>Phí đặt lịch <span id="cost">0</span></p>
+                                <hr>
+                                <p>Tổng cộng <span id="totalPrice">400.000</span></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" id="btn-submit">Xác nhận đặt khám</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <div class="infor">
+            <h4>Phòng khám đa khoa Phước Thịnh</h4>
+            <span><img src="/icons/location-dot-solid.svg" alt="icon"></span><p>1 Hoàng Công Chất, Phú Diễn, Nam Từ Liêm, Hà Nội, Việt Nam</p>
+            <span><img src="/icons/phone-solid.svg" alt="icon"></span><p>0399999999 </p>
+            <span><img src="/icons/envelope-solid.svg" alt="icon"></span><p>support@phuocthinh.com</p>
+            <span><img src="/icons/bo-cong-thuong.svg" alt="icon"></span>
+        </div>
+        <div class="policy">
+            <img src="/images/logo.png" alt="logo">
+            <span>Phước Thịnh</span>
+            <p><a href="#">Tuyển dụng</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+            <p><a href="#">Điều khoản sử dụng</a></p>
+            <p><a href="#">Liên hệ hợp tác</a></p>
+            <p><a href="#">Câu hỏi thường gặp</a></p>
+        </div>
+        <div class="contact">
+            <h4>Liên hệ hỗ trợ</h4>
+            <p><a href="#"><img src="/icons/facebook.svg" alt="icon">Facebook</a></p>
+            <p><a href="#"><img src="/icons/instagram.svg" alt="icon">Instagram</a></p>
+            <p><a href="#"><img src="/icons/twitter.svg" alt="icon">Twitter</a></p>
+        </div>
+        <div class="end">
+            <hr>
+            <span>© 2024 Phước Thịnh</span>
+        </div>
+    </footer>
+
+    <script defer src="/scripts/chung.js"></script>
+    <script defer src="/scripts/datLich.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* body {
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+header {
+    height: 160px;
+    background-color: rgba(237, 255, 250, 1.00);
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo {
+    padding: 28px 0;
+    width: 180px;
+}
+
+header .logo img {
+    max-width: 70px;
+    border-radius: 50%;
+    margin-left: 20%;
+}
+
+header .logo p {
+    color: #ffc10e;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+header .sub-search {
+    position: relative;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff00;
+}
+
+header .search input {
+    font-size: 18px;
+    width: 350px;
+    padding: 6px 5px 11px 18px;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid rgb(209, 209, 209);
+    outline: none;
+    border-right: none;
+    float: left;
+}
+
+header .search span {
+    background-color: white;
+    padding: 12px 20px 7px 10px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 0 30px 30px 0;
+    left: 350px;
+    position: relative;
+    border-left: none;
+    top: -30px
+}
+
+header .search img {
+    cursor: pointer;
+    max-width: 17px;
+}
+
+header .content-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .icon-calendar {
+    text-align: center;
+    padding: 45px 25px 0 0;
+    color: #45C3D2;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .icon-account {
+    text-align: center;
+    padding: 45px 0;
+    color: #45C3D2;
+}
+
+header .icon-account a {
+    text-decoration: none;
+    color: #45C3D2;
+}
+
+header .icon-calendar img {
+    max-width: 28px;
+    cursor: pointer;
+}
+
+header .icon-account img
+{
+    max-width: 25px;
+}
+
+nav {
+    height: 80px;
+    background-color: rgba(237, 255, 250, 1.00);
+}
+
+nav .menu {
+    width: 800px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0;
+    padding: 0;
+}
+
+nav .menu li {
+    text-align: center;
+    margin: 0 5px;
+}
+
+nav .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 1px 10px 3px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+nav .menu a:hover {
+    color:#45C3D2;
+}
+
+nav .menu a:active {
+    color:white;
+    background-color: #45C3D2;
+}
+
+.slide {
+    position: absolute;
+    overflow: hidden;
+    width: 1000px;
+    height: 440px;
+    margin: 0 auto;
+    border-radius: 30px;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.slide .sub-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide .hide-slide {
+    display: flex;
+    transition: transform 0 ease;
+}
+
+.slide .item {
+    flex: 0 0 100%;
+}
+
+.slide .item img {
+    max-width: 1000px;
+}
+
+.slide .control-prev,
+.slide .control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(78, 77, 77, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 5px 10px 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.slide .control-prev {
+    left: 0;
+}
+
+.slide .control-next {
+    right: 0;
+} */
+
+.tour-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tour-categories h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.tour-categories p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.category-item {
+    width: 30%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+}
+
+.category-item h4 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.category-item p {
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+.category-item a {
+    text-decoration: none;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+}
+
+footer .infor, footer .policy, footer .contact {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .end {
+    text-align: center;
+    margin-top: 20px;
+}

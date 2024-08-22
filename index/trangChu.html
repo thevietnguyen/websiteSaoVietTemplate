@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sao Việt Travel - Khám phá thế giới cùng chúng tôi</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/styles/trangChu.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.png" alt="logo">
+            <p>Sao Việt</p>
+        </div>
+       <div class="search">
+            <div class="sub-search">
+                <input type="text" placeholder="Tìm kiếm">
+                <span><img src="/icons/search.svg" alt="icon"></span>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="icon-calendar">
+                <img src="/icons/clock-regular.svg" alt="icon">
+                <p>Lịch hẹn</p>
+                <span id="notification-calendar"></span>
+            </div>
+            <div class="icon-account">
+                <a href="#">
+                    <img src="/icons/user-regular.svg" alt="icon">
+                    <p>Đăng nhập</p>
+                </a>
+            </div>
+        </div>  
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="/index/trangChu.html">Trang chủ</a></li>
+            <li><a href="/index/tour.html">Tour</a></li>
+            <li><a href="/index/huongDanVien.html">Hướng dẫn viên</a></li>
+            <li><a href="/index/xemKS.html">Xem khách sạn</a></li>
+            <li><a href="/index/xemTinTuc.html">Xem tin tức</a></li>
+        </ul>
+    </nav>
+
+    <div class="space"></div>
+
+    <div class="calendar">
+        <div class="title">
+            <span>Lịch hẹn</span>
+            <button type="button" id="btn-close"><img src="/icons/xmark-solid.svg" alt="icon"></button>
+        </div>
+        <div class="content">
+            <div class="sub-content">
+                <img src="/icons/calendar-regular.svg" alt="icon">
+                <div class="infor-calendar">
+                    <p><span id="id-calendar"></span></p>
+                    <p><span id="time"></span></p>
+                    <p><span id="room">Số 1</span></p>
+                    <p><span id="name-faculty"></span></p>
+                    <p><span id="name-doctor"></span></p>
+                    <p><span id="status"></span></p>
+                </div>
+            </div>
+            <div class="sub-content">
+                <img src="/icons/calendar-regular.svg" alt="icon">
+                <div class="infor-calendar">
+                    <p><span id="id-calendar"></span></p>
+                    <p><span id="time"></span></p>
+                    <p><span id="room"></span></p>
+                    <p><span id="name-faculty"></span></p>
+                    <p><span id="name-doctor"></span></p>
+                    <p><span id="status"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <span style="font-weight: 700;">Tổng: </span><span id="totalCalendar"></span>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="sub-slide">
+            <div class="item">
+                <img src="/images/destination_1.jpg" alt="destination_1">
+                <div class="caption">Khám phá Hạ Long Bay</div>
+            </div>
+            <div class="item">
+                <img src="/images/destination_2.jpg" alt="destination_2">
+                <div class="caption">Thư giãn tại Phú Quốc</div>
+            </div>
+            <div class="item">
+                <img src="/images/destination_3.jpg" alt="destination_3">
+                <div class="caption">Trải nghiệm văn hóa Hội An</div>
+            </div>
+        </div>
+        <button class="control-prev" type="button">
+            <span>&lt;</span>
+        </button>
+        <button class="control-next" type="button">
+            <span>&gt;</span>
+        </button>
+    </div>
+    
+    <div class="list" id="faculty-slide">
+        <div class="title">
+            <span>Tour phổ biến</span>
+            <a href="/index/tour.html">
+                <span>Xem thêm</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="content" id="faculty">
+                <div class="sub-list" id="sub-faculty">
+                    <a href="/index/chiTietTour.html">
+                        <img src="/images/tour_1.jpg" alt="tour" id="avatar-tour">
+                        <h4 id="tour-name">Tour Hạ Long 3 ngày 2 đêm</h4>
+                        <span id="tour-price">2,500,000 VNĐ</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-faculty">
+                    <a href="/index/chiTietTour.html">
+                        <img src="/images/tour_2.jpg" alt="tour" id="avatar-tour">
+                        <h4 id="tour-name">3 đảo Nam Phú Quốc 1 ngày</h4>
+                        <span id="tour-price">800,000 VNĐ</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-faculty">
+                    <a href="/index/chiTietTour.html">
+                        <img src="/images/tour_3.jpg" alt="tour" id="avatar-tour">
+                        <h4 id="tour-name">Tour Hà Giang 3 ngày 2 đêm</h4>
+                        <span id="tour-price">2,500,000 VNĐ</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-faculty">
+                    <a href="/index/chiTietTour.html">
+                        <img src="/images/tour_4.jpg" alt="tour" id="avatar-tour">
+                        <h4 id="tour-name">Tour Đà Nẵng Hội An 1 ngày</h4>
+                        <span id="tour-price">1,337,300 VNĐ</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-faculty">
+                    <a href="/index/chiTietTour.html">
+                        <img src="/images/tour_5.jpg" alt="tour" id="avatar-tour">
+                        <h4 id="tour-name">Khám phá Đà Lạt 1 ngày</h4>
+                        <span id="tour-price">600,000 VNĐ</span>
+                    </a>
+                </div>
+            </div>
+            <button class="button-prev" type="button" id="fac-prev">
+                <span>&lt;</span>
+            </button>
+            <button class="button-next" type="button" id="fac-next">
+                <span>&gt;</span>
+            </button>
+        </div>
+    </div>
+    
+    <div class="list" id="doctor-slide">
+        <div class="title">
+            <span>Điểm đến hấp dẫn</span>
+            <a href="/index/diemDen.html">
+                <span>Xem thêm</span>
+            </a>
+        </div>
+        <div class="container">
+            <div class="content" id="doctor">
+                <div class="sub-list" id="sub-doctor">
+                    <a href="/index/chiTietDiemDen.html">
+                        <img id="avatar-destination" src="/images/destination_4.jpg" alt="điểm đến">
+                        <h4 id="destination-name">Sapa</h4>
+                        <span id="destination-description">Thị trấn trong mây</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-doctor">
+                    <a href="/index/chiTietDiemDen.html">
+                        <img id="avatar-destination" src="/images/destination_4.jpg" alt="điểm đến">
+                        <h4 id="destination-name">Sapa</h4>
+                        <span id="destination-description">Thị trấn trong mây</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-doctor">
+                    <a href="/index/chiTietDiemDen.html">
+                        <img id="avatar-destination" src="/images/destination_4.jpg" alt="điểm đến">
+                        <h4 id="destination-name">Sapa</h4>
+                        <span id="destination-description">Thị trấn trong mây</span>
+                    </a>
+                </div>
+                <div class="sub-list" id="sub-doctor">
+                    <a href="/index/chiTietDiemDen.html">
+                        <img id="avatar-destination" src="/images/destination_4.jpg" alt="điểm đến">
+                        <h4 id="destination-name">Sapa</h4>
+                        <span id="destination-description">Thị trấn trong mây</span>
+                    </a>
+                </div>
+            </div>
+            <button class="button-prev" type="button" id="doc-prev">
+                <span>&lt;</span>
+            </button>
+            <button class="button-next" type="button" id="doc-next">
+                <span>&gt;</span>
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="infor">
+            <h4>Sao Việt Travel</h4>
+            <span><img src="/icons/location-dot-solid.svg" alt="icon"></span><p>1 Hoàng Công Chất, Phú Diễn, Nam Từ Liêm, Hà Nội, Việt Nam</p>
+            <span><img src="/icons/phone-solid.svg" alt="icon"></span><p>0399999999 </p>
+            <span><img src="/icons/envelope-solid.svg" alt="icon"></span><p>info@saoviettravel.com</p>
+        </div>
+        <div class="policy">
+            <img src="/images/logo.png" alt="logo">
+            <span>Sao Việt Travel</span>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Chính sách bảo mật</a></p>
+            <p><a href="#">Điều khoản sử dụng</a></p>
+            <p><a href="#">Liên hệ</a></p>
+            <p><a href="#">Câu hỏi thường gặp</a></p>
+        </div>
+        <div class="contact">
+            <h4>Kết nối với chúng tôi</h4>
+            <p><a href="#"><img src="/icons/facebook.svg" alt="icon">Facebook</a></p>
+            <p><a href="#"><img src="/icons/instagram.svg" alt="icon">Instagram</a></p>
+            <p><a href="#"><img src="/icons/twitter.svg" alt="icon">Twitter</a></p>
+        </div>
+        <div class="end">
+            <hr>
+            <span>© 2024 Sao Việt Travel</span>
+        </div>
+    </footer>
+
+    <script defer src="/scripts/chung.js"></script>
+    <script defer src="/scripts/trangChu.js"></script>
+</body>
+</html>
