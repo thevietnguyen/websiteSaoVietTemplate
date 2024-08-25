@@ -1,0 +1,61 @@
+.guide-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.guide-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.guide-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.guide-info h1 {
+    margin-bottom: 10px;
+}
+
+.guide-info p {
+    margin: 5px 0;
+}
+
+.stars {
+    color: gold;
+}
+
+.guide-description, .guide-expertise, .guide-reviews, .guide-booking {
+    margin-bottom: 30px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.reviewer {
+    font-style: italic;
+    text-align: right;
+}
+
+.book-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.book-button:hover {
+    background-color: #0052a3;
+}

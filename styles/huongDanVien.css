@@ -109,7 +109,19 @@ h2 {
     font-weight: bold;
 }
 
+.view-more {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
 
+.view-more:hover {
+    background-color: #0052a3;
+}
 
 /* Responsive design */
 @media (max-width: 768px) {

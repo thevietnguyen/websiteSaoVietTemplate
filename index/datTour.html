@@ -47,48 +47,57 @@
 
 
     <main class="booking-form">
-        <h1>Đặt Tour Hạ Long 3 Ngày 2 Đêm</h1>
+        <h1>Đặt Tour Hạ Long</h1>
         
-        <form action="#" method="POST">
-            <section class="customer-info">
-                <h2>Thông tin người đặt</h2>
-                <div class="form-group">
-                    <label for="fullname">Họ và tên:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Số điện thoại:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="address">Địa chỉ:</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-            </section>
+        <form action="#" method="POST" id="booking-form">
+            <div class="form-container">
+                <section class="tour-info">
+                    <h2>Thông tin tour</h2>
+                    <div class="tour-image">
+                        <img src="/images/tour_1.jpg" alt="Hình ảnh tour Hạ Long" id="tour-image">
+                    </div>
+                    <div class="form-group">
+                        <label for="tour-code">Mã tour:</label>
+                        <input type="text" id="tour-code" name="tour-code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tour-name">Tên tour:</label>
+                        <input type="text" id="tour-name" name="tour-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Số ngày:</label>
+                        <input type="number" id="duration" name="duration" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="participants">Số người tham gia:</label>
+                        <input type="number" id="participants" name="participants" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="total-price">Tổng giá (VNĐ):</label>
+                        <input type="text" id="total-price" name="total-price" readonly>
+                    </div>
+                </section>
 
-            <section class="tour-info">
-                <h2>Thông tin tour</h2>
-                <div class="form-group">
-                    <label for="tour-code">Mã tour:</label>
-                    <input type="text" id="tour-code" name="tour-code" value="HL3N2D" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="start-date">Ngày bắt đầu:</label>
-                    <input type="date" id="start-date" name="start-date" value="2024-09-01" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="end-date">Ngày kết thúc:</label>
-                    <input type="date" id="end-date" name="end-date" value="2024-09-03" readonly>
-                </div>
-                <div class="form-group">
-                    <label for="participants">Số người tham gia:</label>
-                    <input type="number" id="participants" name="participants" min="1" required>
-                </div>
-            </section>
+                <section class="customer-info">
+                    <h2>Thông tin người đặt</h2>
+                    <div class="form-group">
+                        <label for="fullname">Họ và tên:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </section>
+            </div>
 
             <section class="guide-selection">
                 <h2>Chọn hướng dẫn viên</h2>
@@ -100,14 +109,6 @@
                         <option value="guide2">Trần Thị B</option>
                         <option value="guide3">Lê Văn C</option>
                     </select>
-                </div>
-            </section>
-
-            <section class="additional-info">
-                <h2>Thông tin bổ sung</h2>
-                <div class="form-group">
-                    <label for="special-requests">Yêu cầu đặc biệt:</label>
-                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
                 </div>
             </section>
 
